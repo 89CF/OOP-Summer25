@@ -8,5 +8,5 @@ class Person:
         print(f"Hello my name is {self.name}, Im {self.age} years old and i living {self.address} ")
 
 # Example usage
-p1 = Person("Mehmet", 22, Poland/Warsaw)
+p1 = Person("Mehmet", 22, "Poland/Warsaw")
 p1.myfunc()
