@@ -10,7 +10,7 @@ greeting = "Hello, Teacher"  # str
 favorite_numbers = [5, 10, 15]  # list
 
 
-user_info = {"username": "ahmet", "age": 19}  # dict
+user_info = {"username": "Mehmet", "age": 21}  # dict
 
 
 coordinates = (40.7100, -74.0069)  # tup
