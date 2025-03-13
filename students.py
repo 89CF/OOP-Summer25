@@ -1,4 +1,5 @@
-students = [{
+students = [
+ {
  'first_name' = 'Mehmet',
 'last_name' = 'Konmaz',
 'index_number' = 'TR30011',
