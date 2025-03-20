@@ -1,32 +1,22 @@
-animals = [
-    {
-        'name': 'Cat',
-        'group': 'mammals',
-        'number_of_legs': 4,
-        'skills': ['climbing', 'night vision', 'agile hunting']
-    },
-    {
-        'name': 'Eagle',
-        'group': 'birds',
-        'number_of_legs': 2,
-        'skills': ['flying', 'keen eyesight', 'soaring']
-    },
-    {
-        'name': 'Frog',
-        'group': 'amphibians',
-        'number_of_legs': 4,
-        'skills': ['jumping', 'swimming', 'camouflage']
-    },
-    {
-        'name': 'Octopus',
-        'group': 'cephalopods',
-        'number_of_legs': 0,
-        'skills': ['problem solving', 'ink ejection', 'color changing']
-    },
-    {
-        'name': 'Crocodile',
-        'group': 'reptiles',
-        'number_of_legs': 4,
-        'skills': ['ambush hunting', 'swimming', 'powerful bite']
-    }
-]
+class Animal:
+    def __init__(self, name, group, number_of_legs, skills):
+        self.name = name
+        self.group = group
+        self.number_of_legs = number_of_legs
+        self.skills = skills
+    def display_info(self):
+        print(f"{self.name} ({self.group})")
+        print(f"Legs: {self.number_of_legs}")
+        print(f"Skills: {', '.join(self.skills)}")
+        print()
+# Create animal objects from Task 1
+if __name__ == "__main__":
+    animals = [
+        Animal("Cat", "mammals", 4, ["climbing", "night vision"]),
+        Animal("Eagle", "birds", 2, ["flying", "keen eyesight"]),
+        Animal("Frog", "amphibians", 4, ["jumping", "swimming"]),
+        Animal("Octopus", "cephalopods", 0, ["problem solving", "color changing"]),
+        Animal("Crocodile", "reptiles", 4, ["ambush hunting", "powerful bite"])
+    ]
+    for animal in animals:
+        animal.display_info()
