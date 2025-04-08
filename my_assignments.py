@@ -2,16 +2,16 @@
 print("My name is Tony Stark")
 
 # 2. Create 3 different type variables
-name = "Tony"       # String
-age = 42            # Integer
-height = 1.85       # Float
-is_student = True   # Boolean
+name = "Tony" # String
+age = 42 # Integer
+height = 1.85 # Float
+is_student = True # Boolean
 
 # 3. Display variable types
 print("\nVariable Types:")
-print(type(name))       # str
-print(type(age))        # int
-print(type(height))     # float
+print(type(name)) # str
+print(type(age)) # int
+print(type(height)) # float
 print(type(is_student)) # bool
 
 # 4. Check if number is 10
@@ -34,7 +34,7 @@ student = {
     "age": 42,
     "grade": "B"
 }
-print("\nStudent age:", student["age"])  # 22
+print("\nStudent age:", student["age"])  # 42
 
 # 8. Add grape to fruits
 fruits.append("Grape")
@@ -43,7 +43,7 @@ print("\nUpdated fruits list:", fruits)  # ['Apple', 'Banana', 'Cherry', 'Grape'
 # 9. Update student grade
 student["grade"] = "A+"
 print("\nUpdated student:")
-print(student)  # {'name': 'Emily', 'age': 22, 'grade': 'A+'}
+print(student)  # {'name': 'Tony', 'age': 42, 'grade': 'A+'}
 
 # 10. Person class
 class Person:
@@ -51,8 +51,7 @@ class Person:
         self.name = name
         
     def greet(self):
-        print(f"\nHello, {self.name}!")
+        print(f"\nHello, {self.name}!") # Hello, Tony!
 
-# Create object and call method
 person1 = Person("Tony")
-person1.greet()  # Hello, John!
+person1.greet() 
